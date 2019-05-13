@@ -109,6 +109,8 @@ Product: TICKET - Quantity: 3 - Price: 10.0
 ------------------------------------------
 Total: 67.0
 
+Run:
+java -jar triggerise-1.0-SNAPSHOT.jar
 
 
 
