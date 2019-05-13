@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Triggerise:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Triggerise_jar</output-path>
+    <root id="archive" name="Triggerise.jar">
+      <element id="module-output" name="Triggerise" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/lib/groovy-all-2.4.15.jar" path-in-jar="/" />
+      <element id="file-copy" path="$APPLICATION_HOME_DIR$/lib/groovy-all-2.4.15.jar" />
+    </root>
+  </artifact>
+</component>
