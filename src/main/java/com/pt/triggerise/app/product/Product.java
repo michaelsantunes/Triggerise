@@ -15,10 +15,6 @@ public class Product extends ProductCode {
         this.price = price;
     }
 
-    public Product(String code) {
-        super(code);
-    }
-
     @Override
     public String getCode() {
         return super.getCode();
@@ -33,7 +29,7 @@ public class Product extends ProductCode {
     }
 
 
-    public List<Product> productListRepository() {
+    public static List<Product> productListRepository() {
         List<Product> productList;
         productList = new ArrayList<>();
         productList.add(new Product("TICKET", "Triggerise Ticket", 5.00));
@@ -42,7 +38,7 @@ public class Product extends ProductCode {
         return productList;
     }
 
-    public String printRules() {
+    public static String printRules() {
         return "TICKET: 2 FOR 1 \nHOODIE: >= 3 NEW PRICE 19.00";
     }
 }

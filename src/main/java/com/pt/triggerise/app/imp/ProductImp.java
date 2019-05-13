@@ -23,7 +23,7 @@ public class ProductImp implements MenuInterface, DivisorSystem {
     @Override
     public void showData() {
         System.out.println(getTitle(this.title,getDivisor()));
-        for (Product product : new Product(null).productListRepository() ) {
+        for (Product product : Product.productListRepository() ) {
             System.out.println("Code: " + product.getCode());
             System.out.println("Product: " + product.getName());
             System.out.println("Price: " + product.getPrice());
@@ -31,7 +31,7 @@ public class ProductImp implements MenuInterface, DivisorSystem {
         }
         System.out.print("Rules\n");
         System.out.println(getDivisor());
-        System.out.print(new Product(null).printRules());
+        System.out.print(Product.printRules());
         System.out.println();
     }
 }

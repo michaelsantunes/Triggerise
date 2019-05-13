@@ -19,7 +19,7 @@ public class CheckOutImp extends ProductImp implements DivisorSystem {
         super(title);
         this.productAddCheckOut = new ArrayList<>();
         this.productShowCheckOutList = new ArrayList<>();
-        this.productList = new Product(null).productListRepository();
+        this.productList = Product.productListRepository();
         this.productDiscountRulesEnums = new HashSet<>(EnumSet.allOf(ProductDiscountRulesEnum.class));
     }
 

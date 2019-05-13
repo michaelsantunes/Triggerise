@@ -18,7 +18,7 @@ public class MenuDrawing implements DivisorSystem {
     public StringBuilder drawingProductMenu() {
         StringBuilder options = new StringBuilder();
         int menuOption = 1;
-        for ( Product products : new Product(null).productListRepository() ) {
+        for ( Product products : Product.productListRepository() ) {
             options.append("[").append(menuOption).append("]").append(" ").append(products.getCode()).append("\n");
             menuOption++;
         }
