@@ -5,6 +5,4 @@ public interface DivisorSystem {
     default String getDivisor() {
         return "------------------------------------------";
     }
-	
-	
 }
